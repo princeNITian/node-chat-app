@@ -4,6 +4,6 @@
 - sudo snap install --classic heroku
 - heroku create
 - git push heroku main
-- [Open App](https://quiet-coast-00336.herokuapp.com/){:target="_blank"}
+- <a href="https://quiet-coast-00336.herokuapp.com/" target="_blank">Open App</a>
 
 Happy Coding !!
