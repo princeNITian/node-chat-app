@@ -29,12 +29,12 @@ io.on('connection', (socket) => {
     //     'createdAt': new Date()
     // });
 
-    socket.on('createMessage',function(message){
+    socket.on('createMessage',function(message,callback){
         console.log('createMessage', message);
 
         // server emits message to all clients through io
         io.emit('newMessage', generateMessage(message.from, message.text));
-
+        callback('This is from the server.');
         // socket.broadcast.emit('newMessage', {
         //     from: message.from,
         //     text: message.text,
