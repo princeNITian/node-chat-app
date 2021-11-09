@@ -1,4 +1,11 @@
 # node-chat-app
+## Join a room
+<img src="welcome.png" alt="Chat App" />
+
+
+## Demo Chat
+<img src="chat.png" alt="Demo Chat"/>
+
 ## Deployed to Heroku
 > Install heroku
 - sudo snap install --classic heroku
