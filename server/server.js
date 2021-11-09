@@ -75,7 +75,7 @@ io.on('connection', (socket) => {
 
         if(user) {
             io.to(user.room).emit('updateUserList',users.getUserList(user.room));
-            io.to(user.room).emit('newMessage', generateMessage('admin',`${user.name} has left!`))
+            io.to(user.room).emit('newMessage', generateMessage('Admin',`${user.name} has left!`))
         }
     })
 })
