@@ -1,6 +1,7 @@
 const path = require("path");
 const express = require("express");
 const socketIO = require("socket.io");
+const cors = require("cors");
 const http = require("http");
 const { generateMessage, generateLocationMessage } = require("./utils/message");
 const { isRealString } = require("./utils/validation");
