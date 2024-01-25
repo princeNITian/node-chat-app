@@ -1,7 +1,6 @@
 const path = require("path");
 const express = require("express");
 const socketIO = require("socket.io");
-const cors = require("cors");
 const http = require("http");
 const { generateMessage, generateLocationMessage } = require("./utils/message");
 const { isRealString } = require("./utils/validation");
@@ -17,11 +16,6 @@ const io = socketIO(server);
 var users = new Users();
 
 app.use(express.static(publicPath));
-app.use(
-  cors({
-    origin: "*",
-  })
-);
 
 io.on("connection", (socket) => {
   console.log("New user connected!");
